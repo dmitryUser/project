@@ -1,5 +1,8 @@
 package main.java.com;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
 	/**
@@ -39,6 +42,15 @@ public class Main {
 //		System.out.println(functionality.checkUser(userPit));
 //		System.out.println(functionality.checkUser());
 		
+		/* Dmitry, please check this functionality */
+		List<UserFunctionality> usersList = new ArrayList<>();
+		usersList.add(userIra);
+		usersList.add(userSasha);
+		usersList.add(userPit);
+		System.out.println(" Start checking from list:");
+		for(UserFunctionality currentUser : usersList) {
+			System.out.println(currentUser.isUserInSystem());
+		}
 		
 	}
 
